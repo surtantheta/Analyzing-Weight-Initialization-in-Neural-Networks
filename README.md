@@ -1,6 +1,16 @@
 # Analyzing-Weight-Initialization-in-Neural-Networks
 Every Deep Learning book/tutorial points out the fact that weight initialization is an important design choice when developing deep learning neural network models. The initialization step can be critical to the model's ultimate performance, and it requires the right method. <br>
 In this repo, we show the impact of various weight initializations on the accuracy of our model. We train our model on MNIST dataset. <br>
+We consider 7 types of weight intializations:
+<ol>
+  <li> Constant: All weights are initialized to 0. </li>
+  <li> GlorotNormal/ Xavier normal: Values of the weights are sampled from a truncated normal distribution centred on 0 with stddev = sqrt(2 / (fan_in + fan_out)) where fan_in is the number of input units in the weight tensor and fan_out is the number of output units in the weight tensor. </li>
+  <li> HeNormal: Values of the weights are sampled from a truncated normal distribution centred on 0 with stddev = sqrt(2 / fan_in) where fan_in is the number of input units in the weight tensor. </li>
+  <li> Standard Normal Distribution: Values of the weights are sampled from a normal distribution centred on 0 with stddev = 1 . </li>
+  <li> GlorotUniform/ Xavier Uniform: Values of the weights are sampled from a uniform distribution within [-limit, limit], where limit = sqrt(6 / (fan_in + fan_out)) (fan_in is the number of input units in the weight tensor and fan_out is the number of output units). </li>
+  <li> HeUniform: Values of the weights are sampled from a uniform distribution within [-limit, limit], where limit = sqrt(6 / fan_in) (fan_in is the number of input units in the weight tensor). </li>
+  <li> Uniform(0,1): Values of the weights are sampled from a uniform distribution within [0, 1] . </li>
+ </ol>
 ## Visualization
 The model is evaluated using five-fold cross-validation. We plot the 5 accuracies for the 7 types of initialization as mentioned before.
 
