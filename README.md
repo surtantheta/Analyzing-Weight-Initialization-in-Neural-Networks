@@ -3,3 +3,5 @@ Every Deep Learning book/tutorial points out the fact that weight initialization
 In this repo, we show the impact of various weight initializations on the accuracy of our model. We train our model on MNIST dataset. <br>
 ## Visualization
 The model is evaluated using five-fold cross-validation. We plot the 5 accuracies for the 7 types of initialization as mentioned before.
+![image](https://user-images.githubusercontent.com/41645324/135748773-25d50951-34e6-40cb-a0a9-9be6df5c38e2.png)
+
