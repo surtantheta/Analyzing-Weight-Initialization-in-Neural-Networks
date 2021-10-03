@@ -15,7 +15,7 @@ We consider 7 types of weight intializations:
 ## Visualization
 The model is evaluated using five-fold cross-validation. We plot the accuracies of the 5 folds for the 7 types of initialization as mentioned before.
 
-<p align="left"> <img src="https://user-images.githubusercontent.com/41645324/135748773-25d50951-34e6-40cb-a0a9-9be6df5c38e2.png" > </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/41645324/135748773-25d50951-34e6-40cb-a0a9-9be6df5c38e2.png" > </p>
 
 ![image](https://user-images.githubusercontent.com/41645324/135748809-cae035be-9be6-4b4b-bd1d-e236cf9ca11e.png)
 
