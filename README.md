@@ -23,7 +23,7 @@ The model is evaluated using five-fold cross-validation. We plot the accuracies 
 
 Next, we observe the average accuracy for each of these weight intializers.
 
-![image](https://user-images.githubusercontent.com/41645324/135749080-357c4db3-12db-4adc-9fb1-da87245c943d.png)
+<p align="center" width="80%" > <img src="https://user-images.githubusercontent.com/41645324/135749080-357c4db3-12db-4adc-9fb1-da87245c943d.png" > </p>
 
 ## Conclusion
 We observe that for MNIST dataset, the model performs worst for Constant, Random Uniform and Random Normal. For the other weight initializers, the model performs performs the best and the accuracies are more or less similar. This conforms to the literature that whenever weights are initialized to 0 , the training of the neural network stops as there is no change in gradient. <br>
