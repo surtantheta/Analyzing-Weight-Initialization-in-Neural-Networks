@@ -11,8 +11,9 @@ We consider 7 types of weight intializations:
   <li> HeUniform: Values of the weights are sampled from a uniform distribution within [-limit, limit], where limit = sqrt(6 / fan_in) (fan_in is the number of input units in the weight tensor). </li>
   <li> Uniform(0,1): Values of the weights are sampled from a uniform distribution within [0, 1] . </li>
  </ol>
+ 
 ## Visualization
-The model is evaluated using five-fold cross-validation. We plot the 5 accuracies for the 7 types of initialization as mentioned before.
+The model is evaluated using five-fold cross-validation. We plot the accuracies of the 5 folds for the 7 types of initialization as mentioned before.
 
 ![image](https://user-images.githubusercontent.com/41645324/135748773-25d50951-34e6-40cb-a0a9-9be6df5c38e2.png)
 
@@ -20,5 +21,12 @@ The model is evaluated using five-fold cross-validation. We plot the 5 accuracie
 
 ![image](https://user-images.githubusercontent.com/41645324/135748852-a0c3739e-8396-4436-abd3-8026acfc7396.png)
 
+Next, we observe the average accuracy for each of these weight intializers.
+
+![image](https://user-images.githubusercontent.com/41645324/135749080-357c4db3-12db-4adc-9fb1-da87245c943d.png)
+
+## Conclusion
+We observe that for MNIST dataset, the model performs worst for Constant, Random Uniform and Random Normal. For the other weight initializers, the model performs performs the best and the accuracies are more or less similar. This conforms to the literature that whenever weights are initialized to 0 , the training of the neural network stops as there is no change in gradient. <br>
+One point to note is that this is not a generalized conclusion i.e. the results can be different for other datasets and other set of hyper- parameters. We have tried to show here the impact of the weight intializers under a set of standard hyper-parameters for MNIST dataset. The reader is encouraged to try these weight intializers on other datasets like ImageNet, Iris etc. <br>
 
 
