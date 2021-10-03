@@ -3,13 +3,13 @@ Every Deep Learning book/tutorial points out the fact that weight initialization
 In this repo, we show the impact of various weight initializations on the accuracy of our model. We train our model on MNIST dataset. <br>
 We consider 7 types of weight intializations:
 <ol>
-  <li> Constant: All weights are initialized to 0. </li>
-  <li> GlorotNormal/ Xavier normal: Values of the weights are sampled from a truncated normal distribution centred on 0 with stddev = sqrt(2 / (fan_in + fan_out)) where fan_in is the number of input units in the weight tensor and fan_out is the number of output units in the weight tensor. </li>
-  <li> HeNormal: Values of the weights are sampled from a truncated normal distribution centred on 0 with stddev = sqrt(2 / fan_in) where fan_in is the number of input units in the weight tensor. </li>
-  <li> Standard Normal Distribution: Values of the weights are sampled from a normal distribution centred on 0 with stddev = 1 . </li>
-  <li> GlorotUniform/ Xavier Uniform: Values of the weights are sampled from a uniform distribution within [-limit, limit], where limit = sqrt(6 / (fan_in + fan_out)) (fan_in is the number of input units in the weight tensor and fan_out is the number of output units). </li>
-  <li> HeUniform: Values of the weights are sampled from a uniform distribution within [-limit, limit], where limit = sqrt(6 / fan_in) (fan_in is the number of input units in the weight tensor). </li>
-  <li> Uniform(0,1): Values of the weights are sampled from a uniform distribution within [0, 1] . </li>
+  <li> <b>Constant</b>: All weights are initialized to 0. </li>
+  <li> <b>GlorotNormal/ Xavier normal</b>: Values of the weights are sampled from a truncated normal distribution centred on 0 with stddev = sqrt(2 / (fan_in + fan_out)) where fan_in is the number of input units in the weight tensor and fan_out is the number of output units in the weight tensor. </li>
+  <li> <b>HeNormal</b>: Values of the weights are sampled from a truncated normal distribution centred on 0 with stddev = sqrt(2 / fan_in) where fan_in is the number of input units in the weight tensor. </li>
+  <li> <b>Standard Normal Distribution</b>: Values of the weights are sampled from a normal distribution centred on 0 with stddev = 1 . </li>
+  <li> <b>GlorotUniform/ Xavier Uniform</b>: Values of the weights are sampled from a uniform distribution within [-limit, limit], where limit = sqrt(6 / (fan_in + fan_out)) (fan_in is the number of input units in the weight tensor and fan_out is the number of output units). </li>
+  <li> <b>HeUniform</b>: Values of the weights are sampled from a uniform distribution within [-limit, limit], where limit = sqrt(6 / fan_in) (fan_in is the number of input units in the weight tensor). </li>
+  <li> <b>Uniform(0,1)</b>: Values of the weights are sampled from a uniform distribution within [0, 1] . </li>
  </ol>
  
 ## Visualization
