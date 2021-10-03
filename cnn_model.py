@@ -62,7 +62,7 @@ def evaluate_model(dataX, dataY, n_folds=5):
         history = model.fit(trainX, trainY, epochs=10, batch_size=32, validation_data=(testX, testY), verbose=0)
         # evaluate model
         _, acc = model.evaluate(testX, testY, verbose=0)
-        print('&gt; %.3f' % (acc * 100.0))
+        print('Cross Validation accuracy: %.3f' % (acc * 100.0))
         # stores scores
         scores.append(acc)
         histories.append(history)
